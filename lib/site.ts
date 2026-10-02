@@ -28,7 +28,7 @@ export const nav = [
   { label: "Home", href: "/" },
   { label: "Chi siamo", href: "/chi-siamo" },
   { label: "Servizi", href: "/servizi" },
-  { label: "CDC", href: "/clan-development-center" },
+  { label: "Clan CDC", href: "/clan-development-center" },
   { label: "Blog", href: "/blog" },
   { label: "Recruiting", href: "/recruiting" },
   { label: "Contatti", href: "/contatti" },

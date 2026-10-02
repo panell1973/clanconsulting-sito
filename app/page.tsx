@@ -149,7 +149,7 @@ function Hero() {
                 </Button>
               </div>
               <p className="mt-8 text-sm text-white/50">
-                Training &amp; Coaching · BDC · Soft Skills · Vendita
+                Training &amp; Coaching · BDC · Soft Skills · Sales
               </p>
             </FadeIn>
             <FadeIn delay={400}>

@@ -79,8 +79,8 @@ export const services: Service[] = [
     ],
   },
   {
-    id: "vendita",
-    title: "Tecniche di vendita",
+    id: "sales",
+    title: "Sales",
     short:
       "Vendere attraverso comunicazione verbale, non verbale e digitale: storytelling, negoziazione, chiusura.",
     image: "/images/vendita.jpg",

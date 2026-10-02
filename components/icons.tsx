@@ -72,7 +72,7 @@ export const serviceIcons = {
   training: IconTraining,
   bdc: IconBdc,
   "soft-skills": IconSoftSkills,
-  vendita: IconVendita,
+  sales: IconVendita,
   "mystery-shopping": IconMystery,
   "service-design": IconServiceDesign,
 } as const;

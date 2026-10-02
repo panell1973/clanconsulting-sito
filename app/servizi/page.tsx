@@ -10,7 +10,7 @@ import { services } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Servizi",
   description:
-    "Training e coaching aziendale, Business Development Center, soft skills, tecniche di vendita, mystery shopping e service design: i servizi Clanconsulting.",
+    "Training e coaching aziendale, Business Development Center, soft skills, sales, mystery shopping e service design: i servizi Clanconsulting.",
 };
 
 function Check() {
