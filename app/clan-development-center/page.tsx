@@ -5,7 +5,6 @@ import FadeIn from "@/components/FadeIn";
 import PageHero from "@/components/PageHero";
 import Photo from "@/components/Photo";
 import SectionTitle from "@/components/SectionTitle";
-import VimeoFacade from "@/components/VimeoFacade";
 
 export const metadata: Metadata = {
   title: "Clan Development Center",
@@ -57,6 +56,25 @@ const audiencePoints = [
   },
 ];
 
+const cdcFeatures = [
+  {
+    title: "Sviluppo del business",
+    text: "Una struttura dedicata ad ampliare e ottimizzare la gestione delle opportunità commerciali.",
+  },
+  {
+    title: "Customer experience & comunicazione",
+    text: "Miglioramento dei punti di contatto con il cliente attraverso un approccio proattivo, organizzato e orientato ai risultati.",
+  },
+  {
+    title: "Nurturing continuo",
+    text: "Strategie mirate per coltivare il lead nel tempo e rafforzare la fidelizzazione dei clienti acquisiti.",
+  },
+  {
+    title: "Sistemi CRM avanzati",
+    text: "Implementazione e gestione di strumenti tecnologici per tracciare e ottimizzare ogni fase della relazione commerciale.",
+  },
+];
+
 export default function CdcPage() {
   return (
     <>
@@ -93,7 +111,7 @@ export default function CdcPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <FadeIn>
               <Photo
-                src="/images/bdc.jpg"
+                src="/images/cdc.jpg"
                 alt="Il team del Clan Development Center al lavoro"
                 aspect="3/2"
               />
@@ -103,19 +121,43 @@ export default function CdcPage() {
                 La divisione che sviluppa il tuo business
               </SectionTitle>
               <p className="leading-relaxed text-ink/80">
-                Il Clan Development Center è la divisione strategica di
-                Clanconsulting dedicata alla gestione delle opportunità di
-                business e al consolidamento delle relazioni con i clienti.
-                Ottimizza la comunicazione e migliora la customer experience
-                con un approccio strutturato e proattivo.
+                Abbiamo creato il <strong>Clan Development Center (CDC)</strong>,
+                la nostra nuova divisione strategica in outsourcing, pensata
+                per affiancare o guidare la crescita della tua azienda.
               </p>
               <p className="mt-4 leading-relaxed text-ink/80">
-                Il CDC supporta le aziende — o le sostituisce, con un servizio
-                in <strong>outsourcing</strong> — implementando tutti o parte
-                dei livelli di relazione con il cliente, con attività di
-                nurturing e sistemi avanzati di CRM.
+                Il CDC è la divisione strategica di Clanconsulting focalizzata
+                sullo sviluppo del business, sulla gestione avanzata delle
+                opportunità e sul consolidamento delle relazioni con i clienti.
+              </p>
+              <p className="mt-4 leading-relaxed text-ink/80">
+                Offriamo un servizio completo in <strong>outsourcing</strong>,
+                grazie al quale il CDC può affiancare la tua azienda oppure
+                sostituirla interamente nella gestione dei livelli relazionali.
               </p>
             </FadeIn>
+          </div>
+
+          <div className="mt-16">
+            <FadeIn>
+              <h3 className="text-center font-serif text-2xl font-semibold text-primary">
+                Caratteristiche del CDC in outsourcing
+              </h3>
+            </FadeIn>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {cdcFeatures.map((feature, i) => (
+                <FadeIn key={feature.title} delay={i * 80}>
+                  <div className="h-full rounded-xl bg-surface p-6">
+                    <h4 className="font-serif text-lg font-semibold text-primary">
+                      {feature.title}
+                    </h4>
+                    <p className="mt-2 text-sm leading-relaxed text-ink/70">
+                      {feature.text}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </Container>
       </section>
@@ -156,20 +198,6 @@ export default function CdcPage() {
         </Container>
       </section>
 
-      {/* Video */}
-      <section className="py-24">
-        <Container>
-          <SectionTitle eyebrow="Il CDC in un minuto">
-            Guarda come lavoriamo
-          </SectionTitle>
-          <FadeIn>
-            <div className="mx-auto max-w-3xl">
-              <VimeoFacade videoId="683859039" title="Clan Development Center" />
-            </div>
-          </FadeIn>
-        </Container>
-      </section>
-
       {/* Team */}
       <section className="bg-surface py-24">
         <Container>
@@ -201,7 +229,7 @@ export default function CdcPage() {
       <section className="bg-primary py-20 text-center text-white">
         <Container>
           <h2 className="font-serif text-3xl font-semibold sm:text-4xl">
-            Vuoi un CDC al lavoro per la tua azienda?
+            Vuoi un Clan CDC al lavoro per la tua azienda?
           </h2>
           <p className="mx-auto mt-4 max-w-xl leading-relaxed text-white/80">
             Raccontaci come gestisci oggi contatti e clienti: ti mostriamo

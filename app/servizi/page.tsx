@@ -10,7 +10,7 @@ import { services } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Servizi",
   description:
-    "Training e coaching aziendale, Business Development Center, soft skills, sales, mystery shopping e service design: i servizi Clanconsulting.",
+    "Training e coaching, Business Development Center, soft skills, sales, mystery shopping e service design: i servizi Clanconsulting.",
 };
 
 function Check() {
@@ -35,13 +35,7 @@ function Check() {
 export default function ServiziPage() {
   return (
     <>
-      <PageHero title="I nostri servizi">
-        <p>
-          Sei aree di intervento, un unico approccio: capire la tua azienda,
-          costruire un percorso su misura e restare al tuo fianco finché i
-          risultati non arrivano.
-        </p>
-      </PageHero>
+      <PageHero title="I nostri servizi" centered />
 
       {services.map((service, i) => {
         const Icon = serviceIcons[service.id];

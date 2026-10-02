@@ -6,119 +6,20 @@ import SectionTitle from "@/components/SectionTitle";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Clan Talent Management — Recruiting",
+  title: "Clan Talent",
   description:
-    "Selezioniamo i futuri direttori commerciali per le Agenzie Unipol della Campania. Non serve esperienza: formazione a 360°, coaching dedicato e percorso di carriera meritocratico.",
+    "Clan Talent: ricerca e selezione su misura per integrare le risorse strategiche della tua azienda. In corso: la selezione dei futuri direttori commerciali per le Agenzie Unipol della Campania.",
 };
 
 const mailtoHref = `mailto:${site.contacts.recruitingEmail}?subject=${encodeURIComponent(
   "Candidatura Talent Academy Management"
 )}`;
 
-const stroke = {
-  viewBox: "0 0 24 24",
-  fill: "none",
-  stroke: "currentColor",
-  strokeWidth: 1.8,
-  strokeLinecap: "round",
-  strokeLinejoin: "round",
-  "aria-hidden": true,
-  width: 22,
-  height: 22,
-} as const;
-
-const offers = [
-  {
-    title: "Formazione a 360°",
-    text: "Non solo competenza tecnica: un percorso che fa crescere anche la persona.",
-    icon: (
-      <svg {...stroke}>
-        <path d="M12 4l10 5-10 5L2 9l10-5z" />
-        <path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Mentoring & coaching dedicato",
-    text: "Affiancamento costante con professionisti del settore e sviluppo della leadership.",
-    icon: (
-      <svg {...stroke}>
-        <circle cx="9" cy="8" r="3" />
-        <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
-        <path d="M16 5a3 3 0 0 1 0 6" />
-        <path d="M18.5 14.5c1.9.9 3.2 2.6 3.4 4.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Percorso di carriera certificato",
-    text: "Traguardi chiari e meritocratici verso ruoli dirigenziali, con la prospettiva di raggiungere i vertici di agenzia in tempi brevi.",
-    icon: (
-      <svg {...stroke}>
-        <path d="M3 17l6-6 4 4 8-8" />
-        <path d="M15 7h6v6" />
-      </svg>
-    ),
-  },
-  {
-    title: "Trattamento economico",
-    text: "RAL iniziale commisurata all'ingresso, poi scatto importante con piano provvigionale di alto livello e, ai ruoli apicali, partecipazione ai profitti di agenzia.",
-    icon: (
-      <svg {...stroke}>
-        <circle cx="12" cy="12" r="9" />
-        <path d="M14.5 8.5c-.6-.9-1.5-1.5-2.5-1.5-1.7 0-3 1.3-3 3s1.3 3 3 3 3 1.3 3 3-1.3 3-3 3c-1 0-1.9-.6-2.5-1.5" />
-        <path d="M12 5.5v13" />
-      </svg>
-    ),
-  },
-  {
-    title: "Equilibrio e stabilità",
-    text: "Inserimento a lungo termine e attenzione reale al work-life balance.",
-    icon: (
-      <svg {...stroke}>
-        <path d="M12 3v3" />
-        <path d="M5 21h14" />
-        <path d="M12 6l-7 4h14l-7-4z" />
-        <path d="M5 10l-2 5a3 3 0 0 0 6 0l-2-5M19 10l-2 5a3 3 0 0 0 6 0l-2-5" transform="scale(0.85) translate(2 1)" />
-      </svg>
-    ),
-  },
-  {
-    title: "Nella tua provincia",
-    text: "Inserimento in agenzia nella provincia di residenza: cresci sul tuo territorio, senza emigrare.",
-    icon: (
-      <svg {...stroke}>
-        <path d="M12 21c-4-4.5-7-7.6-7-11a7 7 0 0 1 14 0c0 3.4-3 6.5-7 11z" />
-        <circle cx="12" cy="10" r="2.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Ufficio e remoto",
-    text: "Organizzazione del lavoro flessibile: in agenzia e da remoto.",
-    icon: (
-      <svg {...stroke}>
-        <rect x="3" y="5" width="18" height="12" rx="2" />
-        <path d="M8 21h8M12 17v4" />
-      </svg>
-    ),
-  },
-];
-
-const activities = [
-  "Processi di lead management e gestione prospect",
-  "Organizzazione e gestione dei portafogli d'agenzia",
-  "Analisi dei KPI di performance",
-  "Gestione digital & CRM con i principali tool del settore",
-  "Formazione d'aula e affiancamento on-the-job con coach dedicato nei primi mesi",
-];
-
-const requirements = [
-  "Diploma o laurea (anche in corso)",
-  "Dimestichezza con strumenti informatici (Office, Google Workspace, CRM)",
-  "Eccellenti doti comunicative e relazionali",
-  "Propensione alla leadership e orientamento ai risultati",
-  "Dinamismo e attitudine commerciale",
+const methodSteps = [
+  "Definiamo in dettaglio il profilo ricercato, le competenze chiave e il contesto organizzativo d'inserimento.",
+  "Attiviamo canali di ricerca mirati e strategie per intercettare i migliori profili sul mercato.",
+  "Conduciamo colloqui strutturati e analisi delle soft skill per garantire un reale allineamento con i valori aziendali.",
+  "Presentiamo una shortlist qualificata di candidati e affianchiamo la direzione aziendale fino all'inserimento del professionista.",
 ];
 
 const applySteps = [
@@ -140,25 +41,6 @@ const applySteps = [
   },
 ];
 
-function Check() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="mt-0.5 shrink-0 text-accent"
-      aria-hidden="true"
-    >
-      <polyline points="4 12 10 18 20 6" />
-    </svg>
-  );
-}
-
 export default function RecruitingPage() {
   return (
     <>
@@ -169,12 +51,57 @@ export default function RecruitingPage() {
         </p>
       </PageHero>
 
-      {/* Intro */}
+      {/* Ricerca e Selezione */}
       <section className="py-20">
         <Container>
           <FadeIn>
             <div className="mx-auto max-w-3xl text-center">
-              <SectionTitle eyebrow="La selezione">
+              <SectionTitle eyebrow="Ricerca e Selezione">
+                Il talento giusto per la crescita della tua azienda
+              </SectionTitle>
+              <p className="leading-relaxed text-ink/80">
+                Strutturiamo processi di selezione su misura per integrare le
+                risorse strategiche di cui la tua organizzazione ha bisogno.
+              </p>
+              <p className="mt-4 leading-relaxed text-ink/80">
+                Trovare i professionisti giusti richiede metodo, visione e
+                strategie personalizzate. Clan Talent si sviluppa attraverso
+                un percorso strutturato su misura per ogni realtà aziendale.
+              </p>
+            </div>
+          </FadeIn>
+
+          <div className="mt-16">
+            <FadeIn>
+              <h3 className="text-center font-serif text-2xl font-semibold text-primary">
+                La nostra metodologia
+              </h3>
+            </FadeIn>
+            <ol className="mt-8 grid gap-6 sm:grid-cols-2">
+              {methodSteps.map((step, i) => (
+                <FadeIn key={step} delay={i * 80}>
+                  <li className="flex h-full gap-4 rounded-xl bg-surface p-6">
+                    <span
+                      aria-hidden="true"
+                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent font-serif text-lg font-semibold text-primary"
+                    >
+                      {i + 1}
+                    </span>
+                    <p className="leading-relaxed text-ink/80">{step}</p>
+                  </li>
+                </FadeIn>
+              ))}
+            </ol>
+          </div>
+        </Container>
+      </section>
+
+      {/* La selezione */}
+      <section className="bg-surface py-24">
+        <Container>
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <FadeIn>
+              <SectionTitle eyebrow="La selezione" align="left">
                 Futuri direttori commerciali, Agenzie Unipol Campania
               </SectionTitle>
               <p className="leading-relaxed text-ink/80">
@@ -184,42 +111,18 @@ export default function RecruitingPage() {
                 contano il potenziale, il dinamismo e la voglia di crescere
                 sul proprio territorio, senza dover emigrare.
               </p>
-            </div>
-          </FadeIn>
-        </Container>
-      </section>
-
-      {/* Cosa offriamo */}
-      <section className="bg-surface py-24">
-        <Container>
-          <SectionTitle eyebrow="Cosa offriamo">
-            Un percorso, non un posto
-          </SectionTitle>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {offers.map((offer, i) => (
-              <FadeIn key={offer.title} delay={i * 60}>
-                <div className="h-full rounded-xl bg-white p-6 shadow-sm">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent text-primary">
-                    {offer.icon}
-                  </span>
-                  <h3 className="mt-4 font-serif text-lg font-semibold text-primary">
-                    {offer.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/70">
-                    {offer.text}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Il percorso */}
-      <section className="py-24">
-        <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <FadeIn>
+              <div className="mt-8">
+                <a
+                  href={site.recruitingAnnouncementUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md border border-current px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  Leggi l&apos;annuncio completo su LinkedIn
+                </a>
+              </div>
+            </FadeIn>
+            <FadeIn delay={150}>
               <img
                 src="/images/piramide-carriera.png"
                 alt="Piramide del percorso di carriera: dall'ingresso in agenzia al ruolo di Direttore Commerciale"
@@ -228,52 +131,6 @@ export default function RecruitingPage() {
                 loading="lazy"
                 className="w-full rounded-xl border border-primary/10 shadow-lg"
               />
-            </FadeIn>
-            <FadeIn delay={150}>
-              <SectionTitle eyebrow="Il percorso" align="left">
-                Chi cerchiamo
-              </SectionTitle>
-              <p className="leading-relaxed text-ink/80">
-                Cerchiamo risorse ad alto potenziale per un percorso
-                strutturato: i candidati entrano subito nell&apos;attività
-                commerciale delle Agenzie e, affiancati da coach esperti,
-                acquisiscono le competenze per guidare le sedi e ambire al
-                ruolo di Direttore Commerciale.
-              </p>
-            </FadeIn>
-          </div>
-        </Container>
-      </section>
-
-      {/* Cosa farai + Requisiti */}
-      <section className="bg-surface py-24">
-        <Container>
-          <div className="grid gap-14 lg:grid-cols-2">
-            <FadeIn>
-              <h2 className="font-serif text-2xl font-semibold text-primary sm:text-3xl">
-                Cosa farai concretamente
-              </h2>
-              <ul className="mt-6 space-y-3">
-                {activities.map((item) => (
-                  <li key={item} className="flex gap-2 text-ink/80">
-                    <Check />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </FadeIn>
-            <FadeIn delay={120}>
-              <h2 className="font-serif text-2xl font-semibold text-primary sm:text-3xl">
-                Requisiti
-              </h2>
-              <ul className="mt-6 space-y-3">
-                {requirements.map((item) => (
-                  <li key={item} className="flex gap-2 text-ink/80">
-                    <Check />
-                    {item}
-                  </li>
-                ))}
-              </ul>
             </FadeIn>
           </div>
         </Container>

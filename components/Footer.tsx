@@ -27,7 +27,7 @@ export default function Footer() {
                   href={item.href}
                   className="text-sm text-white/80 hover:text-accent"
                 >
-                  {item.label}
+                  {item.footerLabel ?? item.label}
                 </Link>
               </li>
             ))}

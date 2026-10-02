@@ -19,17 +19,27 @@ export const site = {
     linkedinPersonal: "https://www.linkedin.com/in/emilio-orsini-6a117729",
     linkedinCompany: "https://www.linkedin.com/company/102206680",
   },
+  // TODO: sostituire con l'URL del post LinkedIn dell'annuncio completo
+  // quando il cliente lo fornisce (per ora punta alla pagina aziendale).
+  recruitingAnnouncementUrl: "https://www.linkedin.com/company/102206680",
   // TODO: creare l'account su formspree.io e inserire qui l'ID del form
   // (es. "mabcdefg"). Finché resta vuoto il form contatti mostra un avviso.
   FORMSPREE_ID: "",
 } as const;
 
-export const nav = [
+type NavItem = {
+  label: string;
+  href: string;
+  /** Etichetta alternativa usata solo nel footer (es. "CDC" invece di "Clan CDC"). */
+  footerLabel?: string;
+};
+
+export const nav: readonly NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Chi siamo", href: "/chi-siamo" },
   { label: "Servizi", href: "/servizi" },
-  { label: "Clan CDC", href: "/clan-development-center" },
+  { label: "Clan CDC", href: "/clan-development-center", footerLabel: "CDC" },
   { label: "Blog", href: "/blog" },
-  { label: "Recruiting", href: "/recruiting" },
+  { label: "Clan Talent", href: "/recruiting" },
   { label: "Contatti", href: "/contatti" },
 ] as const;

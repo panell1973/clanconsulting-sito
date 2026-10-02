@@ -3,13 +3,20 @@ import Container from "./Container";
 
 export default function PageHero({
   title,
+  centered = false,
   children,
 }: {
   title: string;
+  /** true per le bande senza sottotitolo: titolo centrato e leggermente più grande. */
+  centered?: boolean;
   children?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-primary py-20 text-white">
+    <section
+      className={`relative overflow-hidden bg-primary text-white ${
+        centered ? "py-24" : "py-20"
+      }`}
+    >
       <svg
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.05]"
@@ -27,7 +34,13 @@ export default function PageHero({
         <rect width="100%" height="100%" fill="url(#page-hero-dots)" />
       </svg>
       <Container className="relative">
-        <h1 className="font-serif text-4xl font-semibold sm:text-5xl">
+        <h1
+          className={`font-serif font-semibold ${
+            centered
+              ? "text-center text-4xl sm:text-6xl"
+              : "text-4xl sm:text-5xl"
+          }`}
+        >
           {title}
         </h1>
         {children && (

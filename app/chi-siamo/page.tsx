@@ -17,17 +17,17 @@ const timeline = [
   {
     year: "1996",
     title: "Gli esordi con Half a Car",
-    text: "Emilio Orsini inizia il suo percorso di trainer con Half a Car, azienda di training del Delaware (USA), lavorando con le reti vendita del settore automotive.",
+    text: "L'ideatore è Emilio Orsini, che inizia il suo percorso di trainer con Half a Car, training company del Delaware (USA), che sviluppa nel mondo, per conto di Ford Motor Company, il concetto della «mezza macchina». Lavora come trainer con la rete vendita nel settore automotive.",
   },
   {
-    year: "2000s",
-    title: "The Academy",
-    text: "Half a Car diventa The Academy, realtà di riferimento del training nell'Automotive Business in Italia. Anni di aula, coaching e progetti con concessionarie e case madri.",
+    year: "2001",
+    title: "Reynolds & Reynolds, poi The Academy",
+    text: "Half a Car viene inglobata in Reynolds & Reynolds, leader di software e servizi per concessionari e case automobilistiche negli Stati Uniti, in Canada, nel Regno Unito e in Europa, per poi diventare The Academy, realtà tutta italiana, riferimento del training nell'automotive business. Anni di aula, coaching e progetti con gruppi di concessionarie e case automobilistiche.",
   },
   {
     year: "2024",
     title: "Nasce Clanconsulting",
-    text: "Trent'anni di esperienza confluiscono in un progetto nuovo: una società di consulenza con base in Campania che unisce training, coaching e sviluppo del business.",
+    text: "Questo know-how e questa esperienza di trent'anni confluiscono in un nuovo progetto con una nuova visione: Clanconsulting. Base operativa in Campania, progetti in tutta Italia: programmi su misura, assistenza continuativa e un obiettivo semplice — dare energia alle persone e visione alle aziende. Del team fa parte una co-trainer che segue, con specifica competenza, tutto ciò che riguarda i processi CRM, BDC e KPI nei vari settori di business.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function ChiSiamoPage() {
               </p>
             </FadeIn>
             <div>
-              <SectionTitle eyebrow="La storia" align="left">
+              <SectionTitle eyebrow="Chi siamo oggi" align="left">
                 Dal 1996 a oggi
               </SectionTitle>
               <ol className="relative space-y-10 border-l-2 border-accent/30 pl-8">
@@ -129,7 +129,9 @@ export default function ChiSiamoPage() {
 
       <section className="py-24">
         <Container>
-          <SectionTitle eyebrow="Il team">Chi lavora con te</SectionTitle>
+          <SectionTitle eyebrow="Il team">
+            Il Team di Clanconsulting
+          </SectionTitle>
           <div className="mx-auto max-w-3xl space-y-4 text-center leading-relaxed text-ink/80">
             <p>
               Accanto a Emilio Orsini lavora una figura senior con esperienza

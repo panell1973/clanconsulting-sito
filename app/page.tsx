@@ -224,54 +224,11 @@ function ServicesGrid() {
   );
 }
 
-function AboutBrief() {
-  return (
-    <section className="py-24">
-      <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <FadeIn>
-            <Photo
-              src="/images/chi-siamo.jpg"
-              alt="Emilio Orsini, fondatore di Clanconsulting"
-              aspect="3/4"
-              className="mx-auto max-w-md"
-            />
-          </FadeIn>
-          <FadeIn delay={150}>
-            <SectionTitle eyebrow="Chi siamo" align="left">
-              Trent&apos;anni di training, una nuova visione
-            </SectionTitle>
-            <p className="leading-relaxed text-ink/80">
-              Clanconsulting nasce nel 2024 dall&apos;esperienza di{" "}
-              <strong>Emilio Orsini</strong>, trainer e coach attivo dal 1996:
-              dagli esordi con Half a Car, poi diventata The Academy — realtà
-              di riferimento del training nell&apos;Automotive Business in
-              Italia — fino a oggi. Una storia costruita in aula e sul campo,
-              al fianco di reti vendita e organizzazioni di ogni dimensione.
-            </p>
-            <p className="mt-4 leading-relaxed text-ink/80">
-              Base operativa in Campania, progetti in tutta Italia: programmi
-              su misura, assistenza continuativa e un obiettivo semplice — dare
-              energia alle persone e visione alle aziende.
-            </p>
-            <div className="mt-8">
-              <Button href="/chi-siamo" variant="outline">
-                La nostra storia
-              </Button>
-            </div>
-          </FadeIn>
-        </div>
-      </Container>
-    </section>
-  );
-}
-
 export default function Home() {
   return (
     <>
       <Hero />
       <ServicesGrid />
-      <AboutBrief />
     </>
   );
 }

@@ -14,7 +14,7 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "training",
-    title: "Training & Coaching aziendale",
+    title: "Training & Coaching",
     short:
       "Programmi personalizzati per potenziare le performance di organizzazioni e persone, con assistenza continuativa.",
     image: "/images/training.jpg",
