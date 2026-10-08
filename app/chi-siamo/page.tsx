@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Button from "@/components/Button";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import PageHero from "@/components/PageHero";
@@ -127,28 +126,6 @@ export default function ChiSiamoPage() {
         </Container>
       </section>
 
-      <section className="py-24">
-        <Container>
-          <SectionTitle eyebrow="Il team">
-            Il Team di Clanconsulting
-          </SectionTitle>
-          <div className="mx-auto max-w-3xl space-y-4 text-center leading-relaxed text-ink/80">
-            <p>
-              Accanto a Emilio Orsini lavora una figura senior con esperienza
-              consolidata in ambito BDC e CRM, insieme a una rete di
-              professionisti selezionati per i progetti che richiedono
-              competenze specifiche.
-            </p>
-            <p>
-              Un clan, appunto: piccolo, affiatato e concentrato sui risultati
-              dei clienti.
-            </p>
-          </div>
-          <div className="mt-10 text-center">
-            <Button href="/contatti">Lavora con noi</Button>
-          </div>
-        </Container>
-      </section>
     </>
   );
 }

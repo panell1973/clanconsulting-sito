@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "@/components/Button";
+import ContactSection from "@/components/ContactSection";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import Photo from "@/components/Photo";
@@ -229,6 +230,7 @@ export default function Home() {
     <>
       <Hero />
       <ServicesGrid />
+      <ContactSection />
     </>
   );
 }

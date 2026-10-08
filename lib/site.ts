@@ -19,6 +19,13 @@ export const site = {
     linkedinPersonal: "https://www.linkedin.com/in/emilio-orsini-6a117729",
     linkedinCompany: "https://www.linkedin.com/company/102206680",
   },
+  // Dati legali ufficiali (footer e pagina privacy).
+  legal: {
+    companyName: "Clanconsulting di Emilio Orsini",
+    address: "Via Fucilari 70 – 84014 Nocera Inferiore (SA)",
+    vat: "06234730650",
+    pec: "clanconsulting360@pec-mail.it",
+  },
   // TODO: sostituire con l'URL del post LinkedIn dell'annuncio completo
   // quando il cliente lo fornisce (per ora punta alla pagina aziendale).
   recruitingAnnouncementUrl: "https://www.linkedin.com/company/102206680",

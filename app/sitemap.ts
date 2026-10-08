@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/servizi",
     "/clan-development-center",
     "/recruiting",
+    "/contatti",
+    "/privacy",
   ];
 
   return routes.map((route) => ({

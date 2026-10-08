@@ -72,11 +72,17 @@ export default function Footer() {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/60 sm:flex-row">
-          <p>© {year} Clanconsulting. Tutti i diritti riservati.</p>
-          <Link href="/privacy" className="hover:text-accent">
-            Privacy
-          </Link>
+        <Container className="py-5 text-xs text-white/60">
+          <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
+            <p>© {year} Clanconsulting. Tutti i diritti riservati.</p>
+            <Link href="/privacy" className="hover:text-accent">
+              Privacy
+            </Link>
+          </div>
+          <p className="mt-2 text-center text-[11px] leading-relaxed text-white/40 sm:text-left">
+            {site.legal.companyName} · {site.legal.address} · P.IVA{" "}
+            {site.legal.vat}
+          </p>
         </Container>
       </div>
     </footer>

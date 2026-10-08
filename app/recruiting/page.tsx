@@ -101,6 +101,9 @@ export default function RecruitingPage() {
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <FadeIn>
+              <p className="mb-6 inline-flex items-center rounded-full bg-accent px-5 py-2 text-xs font-semibold uppercase tracking-widest text-primary shadow-md">
+                Ottobre – Dicembre 2026: chi stiamo cercando
+              </p>
               <SectionTitle eyebrow="La selezione" align="left">
                 Futuri direttori commerciali, Agenzie Unipol Campania
               </SectionTitle>

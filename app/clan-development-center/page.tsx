@@ -123,17 +123,16 @@ export default function CdcPage() {
               <p className="leading-relaxed text-ink/80">
                 Abbiamo creato il <strong>Clan Development Center (CDC)</strong>,
                 la nostra nuova divisione strategica in outsourcing, pensata
-                per affiancare o guidare la crescita della tua azienda.
-              </p>
-              <p className="mt-4 leading-relaxed text-ink/80">
-                Il CDC è la divisione strategica di Clanconsulting focalizzata
-                sullo sviluppo del business, sulla gestione avanzata delle
-                opportunità e sul consolidamento delle relazioni con i clienti.
+                per affiancare o guidare la crescita della tua azienda,
+                focalizzato sullo sviluppo del business, sulla gestione
+                avanzata delle opportunità e sul consolidamento delle
+                relazioni con i clienti.
               </p>
               <p className="mt-4 leading-relaxed text-ink/80">
                 Offriamo un servizio completo in <strong>outsourcing</strong>,
-                grazie al quale il CDC può affiancare la tua azienda oppure
-                sostituirla interamente nella gestione dei livelli relazionali.
+                grazie al quale il CDC diventa una estensione
+                dell&apos;azienda e gestisce i processi di un BDC, interamente
+                o in parte.
               </p>
             </FadeIn>
           </div>
