@@ -10,7 +10,7 @@ const inputCls =
   "w-full rounded-md border border-primary/15 bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent";
 const labelCls = "mb-1.5 block text-sm font-medium text-primary";
 
-const formspreeConfigured = site.FORMSPREE_ID !== "";
+const formspreeConfigured = site.FORMSPREE_ID.length > 0;
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");

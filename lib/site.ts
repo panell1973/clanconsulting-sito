@@ -29,9 +29,9 @@ export const site = {
   // TODO: sostituire con l'URL del post LinkedIn dell'annuncio completo
   // quando il cliente lo fornisce (per ora punta alla pagina aziendale).
   recruitingAnnouncementUrl: "https://www.linkedin.com/company/102206680",
-  // TODO: creare l'account su formspree.io e inserire qui l'ID del form
-  // (es. "mabcdefg"). Finché resta vuoto il form contatti mostra un avviso.
-  FORMSPREE_ID: "",
+  // ID del form su formspree.io: se torna vuoto il form contatti mostra
+  // un avviso e disabilita l'invio.
+  FORMSPREE_ID: "xoejdwww",
 } as const;
 
 type NavItem = {
@@ -46,7 +46,8 @@ export const nav: readonly NavItem[] = [
   { label: "Chi siamo", href: "/chi-siamo" },
   { label: "Servizi", href: "/servizi" },
   { label: "Clan CDC", href: "/clan-development-center", footerLabel: "CDC" },
-  { label: "Blog", href: "/blog" },
+  // TODO: ripristinare { label: "Blog", href: "/blog" } quando la sezione
+  // blog sarà pubblicata (Sessione 3 del piano).
   { label: "Clan Talent", href: "/recruiting" },
   { label: "Contatti", href: "/contatti" },
 ] as const;
